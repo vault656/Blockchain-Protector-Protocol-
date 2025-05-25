@@ -13,3 +13,15 @@ deploymentTarget = "cloudrun"
 
 [[ports]]
 localPort = 5000
+
+[workflows]
+runButton = "Flask Dev Server"
+
+[[workflows.workflow]]
+name = "Flask Dev Server"
+author = 43120615
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python main.py"
