@@ -13,6 +13,7 @@ deploymentTarget = "cloudrun"
 
 [[ports]]
 localPort = 5000
+externalPort = 80
 
 [workflows]
 runButton = "Flask Dev Server"
